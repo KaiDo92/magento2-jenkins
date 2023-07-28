@@ -5,7 +5,7 @@ pipeline {
         stage('Deploy Magento') {
             steps {
                 echo 'Deploying and cleaning'
-                sh 'echo $(date +%s)'
+                sh 'echo $(date +%s) > ~/jenkins_build_test.log'
             }
         }
     }
